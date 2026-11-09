@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.mengxin.launcher" platformBuildVersionCode="36" platformBuildVersionName="16">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.mengxin.launcher.native" platformBuildVersionCode="36" platformBuildVersionName="16">
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -67,7 +67,7 @@
         <!-- 新增开机广播接收器 -->
         <!-- 开机+用户就绪广播接收器，只保留一份 -->
         <receiver
-            android:name="com.mengxin.launcher.BootReceiver"
+            android:name="com.mengxin.launcher.native.BootReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -80,7 +80,7 @@
 
         <!-- 备用亮屏/用户解锁触发接收器，当BOOT广播被拦截时兜底 -->
         <receiver
-            android:name="com.mengxin.launcher.ScreenReceiver"
+            android:name="com.mengxin.launcher.native.ScreenReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
