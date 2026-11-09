@@ -65,17 +65,15 @@
         <activity android:exported="true" android:name="com.mengxin.launcher.ExoProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <activity android:exported="true" android:name="com.mengxin.launcher.FrameProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- 新增开机广播接收器 -->
+        <!-- 开机+用户就绪广播接收器，只保留一份 -->
         <receiver
             android:name="com.mengxin.launcher.BootReceiver"
             android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
-            <intent-filter android:priority="1000">
+            android:exported="true">
+            <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-                <action android:name="android.intent.action.LETV_SCREENON"/>
-                <category android:name="android.intent.category.HOME" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.USER_PRESENT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
