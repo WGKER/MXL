@@ -53,7 +53,7 @@
         <provider android:authorities="com.dangbei.tvlauncher.received" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.TransferFileProvider"/>
         <provider android:authorities="com.dangbei.tvlauncher.files" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.FileOpenProvider"/>
         <provider android:authorities="com.dangbei.tvlauncher.update" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.UpdateFileProvider"/>
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.mengxin.launcher.MainActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/AppTheme">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.dangbei.tvlauncher.MainActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.HOME"/>
