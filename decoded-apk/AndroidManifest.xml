@@ -50,9 +50,9 @@
         </intent>
     </queries>
     <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@mipmap/ic_launcher_banner" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:requestLegacyExternalStorage="true" android:supportsRtl="false" android:theme="@style/AppTheme">
-        <provider android:authorities="com.mengxin.launcher.received" android:exported="false" android:grantUriPermissions="true" android:name="com.mengxin.launcher.TransferFileProvider"/>
-        <provider android:authorities="com.mengxin.launcher.files" android:exported="false" android:grantUriPermissions="true" android:name="com.mengxin.launcher.FileOpenProvider"/>
-        <provider android:authorities="com.mengxin.launcher.update" android:exported="false" android:grantUriPermissions="true" android:name="com.mengxin.launcher.UpdateFileProvider"/>
+        <provider android:authorities="com.dangbei.tvlauncher.received" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.TransferFileProvider"/>
+        <provider android:authorities="com.dangbei.tvlauncher.files" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.FileOpenProvider"/>
+        <provider android:authorities="com.dangbei.tvlauncher.update" android:exported="false" android:grantUriPermissions="true" android:name="com.dangbei.tvlauncher.UpdateFileProvider"/>
         <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.mengxin.launcher.MainActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
