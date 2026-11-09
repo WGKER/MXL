@@ -61,12 +61,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:name="com.mengxin.launcher.VideoPlayerActivity" android:screenOrientation="landscape" android:theme="@style/PlayerTheme"/>
-        <activity android:exported="true" android:name="com.mengxin.launcher.ExoProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
-        <activity android:exported="true" android:name="com.mengxin.launcher.FrameProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density" android:exported="false" android:name="com.dangbei.tvlauncher.VideoPlayerActivity" android:screenOrientation="landscape" android:theme="@style/PlayerTheme"/>
+        <activity android:exported="true" android:name="com.dangbei.tvlauncher.ExoProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:exported="true" android:name="com.dangbei.tvlauncher.FrameProbeActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
         <!-- 新增开机广播接收器 -->
         <receiver
-            android:name="com.mengxin.launcher.native.BootReceiver"
+            android:name="com.dangbei.tvlauncher.BootReceiver"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
@@ -82,7 +82,7 @@
 
         <!-- 备用亮屏/用户解锁触发接收器，当BOOT广播被拦截时兜底 -->
         <receiver
-            android:name="com.mengxin.launcher.native.ScreenReceiver"
+            android:name="com.dangbei.tvlauncher.ScreenReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
