@@ -1,0 +1,12 @@
+name: Search Text
+on: workflow_dispatch
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: search keyword
+        run: |
+          grep -r "萌新快传" --include="*.smali" --include="*.xml" --include="*.html" . || echo "未匹配：萌新快传"
+          grep -r "LAN CARGO TRANSFER" --include="*.smali" . || echo "未匹配：LAN CARGO TRANSFER"
+          grep -r "NanoHTTPD" --include="*.smali" . || echo "未匹配：NanoHTTPD"
